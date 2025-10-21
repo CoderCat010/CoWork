@@ -19,13 +19,13 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
-<body>
+<body class="mx-auto max-w-[1200px] lg:px-[10px] md:px-7 px-[30px]">
     
 <!--&=================HEADER PART=================-->
     <header class="pt-5 pb-[100px]">
         <!--
         navbar parent div 
-         -->
+        -->
         <nav class="navbar-list">
             <div class="flex justify-between items-center">
             <!--?header logo  -->
@@ -33,17 +33,36 @@
             
                 <!--!nav list item -->
                 <ul class="flex items-center gap-x-5">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Events</a></li>
+                    <li class="lg:block md:block hidden"><a href="#">About</a></li>
+                    <li class="lg:block md:block hidden"><a href="#">Pricing</a></li>
+                    <li class="lg:block hidden"><a href="#">Blog</a></li>
+                    <li class="lg:block md:block hidden"><a href="#">Events</a></li>
 
                     <!-- !nav list button -->
-                    <button class="rounded-full border-[1px] border-[#1D1E1C] px-4 py-1">Log In</button>
+                    <button class="lg:block hidden rounded-full border-[1px] border-[#1D1E1C] px-4 py-1">Log In</button>
                     <button class="rounded-full bg-[#1D1E1C] px-4 py-1 text-[#fff]">Sign Up</button>
                 </ul>
             </div>
         </nav>
+
+        <!-- 
+        banner parent div
+         -->
+        <div class="flex lg:flex-row md:flex-row flex-col items-center justify-between mt-[100px] gap-x-[50px]">
+            <!-- ?banner title container -->
+            <div>
+                <h1 class="lg:text-[70px] md:text-[40px] text-[30px] font-[900] text-[#1D1E1C] leading-tight">Elevate Your Workspace With Cowork.</h1>
+                <p class="text-[#4B4B4B]  mt-4 mb-6">Welcome to Cowork – where innovation meets collaboration in the heart  of productivity! Unleash your potential in our thoughtfully designed coworking spaces, tailored to inspire creativity and foster connections.</p>
+                <button class="bg-[#1D1E1C] text-[#fff] py-2 px-5 rounded-full">Claim your Spot</button>
+            </div>
+
+            <!-- ?banner img container -->
+             <div>
+                <img class="lg:w-[70rem] lg:h-[500px] w-full h-full lg:mt-0 md:mt-0 mt-10 rounded-[40px]" src="./img/banner-img.jpg" alt="">
+             </div>
+
+        </div>
+        
     </header>
 
 
